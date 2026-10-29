@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arfa Kamran | Computer Science Student</title>
+  <meta name="description" content="CV website of Arfa Kamran, a BS Computer Science student passionate about software engineering, ML and AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#home">PORTFOLIO</a>
+      <ul class="nav__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <header class="hero panel load-fade-in" id="home">
+      <ul class="hero__contact load-slide-left" style="--delay: 100ms;">
+        <li><span class="ico">&#9679;</span> Lahore, Pakistan</li>
+        <li><a href="mailto:arfakamranbutt3@gmail.com">arfakamranbutt3@gmail.com</a></li>
+        <li><a href="https://github.com/arfakamranbutt" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/arfa-kamran-147044344/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+
+      <a class="pill load-slide-right" href="#contact">Available for projects <span>&#10022;</span></a>
+
+      <div class="hero__text">
+        <p class="hero__hello load-slide-left" style="--delay: 200ms;">Hello, I'm</p>
+        <h1 class="hero__name load-slide-left" style="--delay: 350ms;">
+          <span class="hero__first">Arfa</span>
+          <span class="hero__last">Kamran</span>
+        </h1>
+        <p class="hero__role load-slide-left" style="--delay: 500ms;">Stepping into the world of AI and Machine Learning.</p>
+        <p class="hero__tagline load-slide-left" style="--delay: 600ms;">COMP SCI STUDENT - 5TH SEM</p>
+      </div>
+
+      <div class="hero__photo load-fade-zoom" style="--delay: 250ms;">
+        <img src="imgs/pic.jpg" alt="Portrait of Arfa Kamran">
+      </div>
+    </header>
+
+    <div class="grid">
+
+      <!-- EDUCATION -->
+      <section class="panel reveal" id="education">
+        <h2 class="panel__title">Education &amp; Experience <span class="star">&#10022;</span></h2>
+        <ol class="timeline">
+          <li>
+            <span class="timeline__year">2024 - Present</span>
+            <p><strong>BS Computer Science</strong> <em>(Ongoing)</em> - Qarshi University</p>
+          </li>
+          <li>
+            <span class="timeline__year">2022 - 2024</span>
+            <p><strong>Intermediate in Computer Science</strong> - Punjab Group of Colleges</p>
+          </li>
+          <li>
+            <span class="timeline__year">2020 - 2022</span>
+            <p><strong>Matriculation (Computer Science)</strong> - Unique Group of Institutions</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="panel reveal" id="skills">
+        <h2 class="panel__title">Technical Skills <span class="star">&#10022;&#10022;</span></h2>
+        <ul class="chips">
+          <li>Python</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>DSA</li>
+          <li>OOP</li>
+          <li>Git &amp; GitHub</li>
+          <li>VS Code</li>
+          <li>Streamlit</li>
+          <li>NetworkX</li>
+          <li>Matplotlib</li>
+          <li>Operating Systems</li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="panel reveal" id="projects">
+        <div class="panel__head">
+          <h2 class="panel__title">Selected Projects <span class="star">&#10022;</span></h2>
+          <a class="panel__link" href="https://github.com/arfakamranbutt" target="_blank" rel="noopener">View all projects &rarr;</a>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Route Optimization System</h3>
+            <p>Graph-based route optimization app built in Python, comparing routing strategies by speed and memory.</p>
+            <ul>
+              <li>Dijkstra, A*, Floyd-Warshall</li>
+              <li>Prim's MST, visualised with NetworkX</li>
+            </ul>
+            <a href="https://github.com/arfakamranbutt/Route-Optimization-System" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </article>
+
+          <article class="card">
+            <h3>CineMatch</h3>
+            <p>Movie recommendation web app in Python using OOP, DSA and DAA concepts.</p>
+            <ul>
+              <li>Genre-based recommendation engine</li>
+              <li>Designed for future ML integration</li>
+            </ul>
+            <a href="https://github.com/arfakamranbutt/CineMatch" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </article>
+
+          <article class="card">
+            <h3>FinTrack</h3>
+            <p>Personal finance management app in Java for tracking expenses and financial records.</p>
+            <ul>
+              <li>OOP-based feature design</li>
+              <li>Live values via API integration</li>
+            </ul>
+            <a href="https://github.com/arfakamranbutt/FinTrack" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </article>
+
+          <article class="card">
+            <h3>Garden Buddy</h3>
+            <p>Team concept for a plant care and management application.</p>
+            <ul>
+              <li>Website design and documentation</li>
+              <li>User research and feature planning</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="panel reveal" id="certifications">
+        <h2 class="panel__title">Certifications <span class="star">&#10022;</span></h2>
+        <div class="certs">
+          <div class="cert">
+            <strong>IBM SkillsBuild</strong>
+            <span>Getting Started with Data</span>
+            <small>Digital Badge, 2026</small>
+          </div>
+          <div class="cert">
+            <strong>Anthropic</strong>
+            <span>AI Fluency: Framework &amp; Foundations</span>
+            <small>2026</small>
+          </div>
+          <div class="cert">
+            <strong>Google AI Essentials</strong>
+            <span>Artificial Intelligence foundations</span>
+            <small>2026</small>
+          </div>
+          <div class="cert">
+            <strong>Google Advanced Data Analytics</strong>
+            <span>Foundational Advanced Analytics</span>
+            <small>2026</small>
+          </div>
+          <div class="cert">
+            <strong>Google Cybersecurity</strong>
+            <span>Operational Cybersecurity Security Badge</span>
+            <small>2026</small>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SEMANTIC FOOTER AND LETS COLLABORATE SECTION -->
+    <footer class="footer" id="contact">
+      <section class="panel panel--red reveal footer__collaborate">
+        <h2 class="contact__title">Let's Collaborate</h2>
+        <p class="contact__loc">Lahore, Pakistan</p>
+        <a class="contact__mail" id="emailLink" href="mailto:arfakamranbutt3@gmail.com">arfakamranbutt3@gmail.com</a>
+        <p class="contact__links">
+          <a href="https://github.com/arfakamranbutt" target="_blank" rel="noopener">GitHub</a>
+          <span>&#10022;</span>
+          <a href="https://www.linkedin.com/in/arfa-kamran-147044344/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <p class="contact__note" id="copyNote" aria-live="polite"></p>
+      </section>
+      
+      <p class="footer__credits">&copy; <span id="year">2026</span> Arfa Kamran</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
