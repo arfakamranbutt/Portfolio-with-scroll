@@ -30,7 +30,7 @@ function updateActiveLink() {
 window.addEventListener("scroll", updateActiveLink, { passive: true });
 updateActiveLink();
 
-// Copy email to clipboard on click (still falls back to mailto if copying fails)
+// Copy email to clipboard on click
 const emailLink = document.getElementById("emailLink");
 const copyNote = document.getElementById("copyNote");
 if (emailLink && copyNote) {
@@ -43,5 +43,31 @@ if (emailLink && copyNote) {
         setTimeout(() => (copyNote.textContent = ""), 2500);
       })
       .catch(() => (window.location.href = emailLink.href));
+  });
+}
+
+// ---------- AURA EMBEDDED BANNER INTERACTION ----------
+const auraBanner = document.getElementById("auraBanner");
+const auraCompanion = document.getElementById("auraCompanion");
+const auraText = document.getElementById("auraText");
+
+const auraQuotes = [
+  "...and currently crafting more exciting AI & software projects behind the scenes! ✧",
+  "Fun fact: Arfa builds algorithms & routing engines in Python & C++! 💻",
+  "Click any project card above to view the full source code on GitHub! 🚀",
+  "Aura approved! ✨ Feel free to collaborate with Arfa anytime!"
+];
+
+let quoteIndex = 0;
+
+if (auraBanner && auraText && auraCompanion) {
+  auraBanner.addEventListener("click", () => {
+    // Spin Aura
+    auraCompanion.classList.add("is-excited");
+    setTimeout(() => auraCompanion.classList.remove("is-excited"), 600);
+
+    // Cycle quote
+    quoteIndex = (quoteIndex + 1) % auraQuotes.length;
+    auraText.textContent = auraQuotes[quoteIndex];
   });
 }
